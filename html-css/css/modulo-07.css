@@ -1,0 +1,175 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+
+/* 
+
+	Herança
+
+	1. Sobreposição / Sobrescreve
+	2. Aplica a último estilo definido
+	3. Prioriza estilo específicas (com seletores mais próximos)
+	4. Se aplica a todas as propriedades
+
+ */
+
+
+html {
+	font-family: 'Cinzel', serif;
+	color: #757575;
+}
+
+p {
+	color: rgb(255,108,221);
+}
+
+header p {
+	color: rgb(255,108,221);
+	font-size: 1.5rem;
+}
+
+
+/* 
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+
+header h2 {
+	font-weight: 100;
+	font-family: Cinzel, serif;
+}
+
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+	background: rgb(255,108,221);
+	color: #333;
+}
+
+h2 ~ h5 {
+	font-size: 1.2rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+
+/* Pseudo-classes */
+
+a {
+	color: #666666;
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a:visited {
+	color: #f00;
+}
+
+a:active {
+	color: #096;
+}
+
+a:hover {
+	color: #009;
+	background: #888888;
+}
+
+h2:hover {
+	color: #888;
+}
+
+
+/* 
+	Tipografia
+*/
+
+html {
+	font-family: 'Cinzel', serif;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+	font-family: 'Josefin Slab', cursive;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+	font-family: Cinzel, serif;
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+h3 {
+	/* declaração resumida / completa */
+	font: italic bold 1.2rem/2 sans-serif;
+}
+
+
+/* 
+
+	Cores
+
+*/
+
+body {
+	background: url('../images/pinkdiamond.png') center top repeat #EEEEEE;
+}
+
+section {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+p {
+	color: blue;
+	color: #034589;
+}
+
+header,
+footer {
+	background-color: rgb(121,18,97);
+}
+
+footer p {
+	color: rgb(255, 255, 255);
+}
+
+.navegacao {
+	background-color: rgb(147,228,144);
+	padding: 0.5rem;
+}
+
+.navegacao li a {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.navegacao li a:hover {
+	background-color: rgba(79,141,77);
+	color: #333333;
+}

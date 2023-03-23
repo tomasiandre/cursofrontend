@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Formulário Fale Conosco</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<header>
+			<h2>Joalheria Blanche</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul class="navegacao">
+					<li><a href="homepage.html">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>Contato</h1>
+				<p>Preencha os campos abaixo</p>
+
+				<form method="post">
+
+					<div>
+						<label for="nome">Nome</label>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+
+					<div>
+						<label for="email">E-mail</label>
+						<input type="email" name="email" id="email" placeholder="Digite seu email">
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label>
+						<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+					</div>
+
+					<div>
+						<p>
+							<label>Qual metal você prefere?</label>
+							<input type="radio" name="linguagens" value="Ouro"> Ouro
+							<input type="radio" name="linguagens" value="Prata"> Prata
+							<input type="radio" name="linguagens" value="Platina"> Platina
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>Em quais ocasiões você usa jóias?</label>
+							<input type="checkbox" name="linguagens" value="html"> jantar fora
+							<input type="checkbox" name="linguagens" value="css"> casamentos e aniversários
+							<input type="checkbox" name="linguagens" value="javascript">todos os dias
+						</p>
+					</div>
+
+					<div>
+						<label>Qual a sua pedra favorita?</label>
+						<select>
+							<option value="Safira">Safira</option>
+							<option value="Esmeralda">Esmeralda</option>
+							<option value="Rubi" selected>Rubi</option>
+						</select>
+					</div>
+
+					<div>
+						<input type="submit" >
+					</div>
+					
+
+				</form>
+
+				
+				
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Marcelo, Editado por André</p>
+		</footer>
+		
+	</body>
+</html>
